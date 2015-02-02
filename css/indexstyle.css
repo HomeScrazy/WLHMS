@@ -1,0 +1,54 @@
+#title_logo{
+	background-image: url(../images/title_image/back_nav3.jpg);
+	width: 80%;
+	margin-left: 10%;
+	height: 56px;
+}
+#title_left{
+	background-image: url(../images/title_image/hello.jpg);
+	width: 20%;
+	height: 109px;
+	margin-left:10%;
+	float: left;
+}
+#title_right{
+	background-image: url(../images/title_image/logo.jpg);
+	width: 40%;
+	height: 95px;
+	float: left;
+	margin-left: 25%;
+
+}
+#showclass{
+	margin-left: 10%;
+	float: left;
+	text-align: center;
+
+}
+#showclass li{
+	list-style-type: none;
+	border-bottom: 1px solid #A6FFFF;
+	height: 30px;
+	line-height: 30px;
+	border-left: 2px solid #4DFFFF;
+	border-right: 2px solid #4DFFFF;
+}
+#showclass .title{
+	font-size: 16px;
+	font-weight: 700;
+	background-color:#4DFFFF;
+	width: 200px;
+	height: 30px;
+	line-height: 30px;
+	font-family: "宋体";
+}
+#need_login a{
+	text-decoration: none;
+	margin-left: 6px;
+	color:#333333; 
+	font-size: 16px;
+}
+#need_login a:hover{
+	color: #CC3333;
+}
+
