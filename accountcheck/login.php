@@ -2,8 +2,8 @@
 <html>
 <head>
     <title>文理好买手-用户登录</title>
-    <script src="dist\js\bootstrap.js"></script>
-    <link rel="stylesheet" type="text/css" href="dist\css\bootstrap.css">
+    <script src="..\dist\js\bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="..\dist\css\bootstrap.css">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <style type="text/css">
     .warning{
@@ -52,7 +52,7 @@
       $result=mysql_query($query);
       if(mysql_num_rows($result)){
         $_SESSION['user_email']=$email;
-        $url="index.php";
+        $url="../index.php";
         Header("Location: $url");
       }else{
         echo "<script>alert(\"帐号或用户名不正确\")</script>";
@@ -61,7 +61,7 @@
     }
   }
 ?>
-<div style="width:1100px;background-image:url('images/body.jpg'); text-align: center; height: 404px;">
+<div style="width:1100px;background-image:url('../images/body.jpg'); text-align: center; height: 404px;">
   <h1>会员登录</h1>
   <hr/>
   
@@ -86,11 +86,10 @@
         <input type="text" class="form-control" id="inputPassword3" placeholder="CheckCode" name="checkcode">
         <?php echo $checkcodeErr;?>
       </div>
-      <img  style="margin-left:-390px;" title="点击刷新" src="plugin/captcha.php" align="absbottom" onclick="this.src='plugin/captcha.php?'+Math.random();"></img>
+      <img  style="margin-left:-390px;" title="点击刷新" src="../plugin/captcha.php" align="absbottom" onclick="this.src='../plugin/captcha.php?'+Math.random();"></img>
     </div>
     <input type="submit" class="btn btn-success" style="margin-left:-500px;" name="submit" value="Login"/>
   </form>
 </div>
-  
   </body>
 </html>

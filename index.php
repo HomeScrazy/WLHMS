@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <?php
-    require('basepage.php');
+    require('PageBase.php');
   ?>
   <head>
    

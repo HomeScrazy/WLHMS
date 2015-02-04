@@ -3,8 +3,8 @@
 <html>
   <head>
     <title>文理好买手-用户注册</title>
-    <script src="dist\js\bootstrap.js"></script>
-    <link rel="stylesheet" type="text/css" href="dist\css\bootstrap.css">
+    <script src="..\dist\js\bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="..\dist\css\bootstrap.css">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <style type="text/css">
     .warning{
@@ -59,14 +59,14 @@
       $insert.="insert into member values";
       $insert.="('".$id."','".$nickname."','".$email."','".$pwd."')";
       mysql_select_db("wlsale",$con);
-      mysql_query($insert);
+      mysql_select_db("wlsale",$con);
       mysql_close($con);
       $success="<script>alert(\"注册成功\")</script>";
 
     }
   }
 ?>
-    <div style="width:1100px;background-image:url('images/body.jpg'); text-align: center; height: 404px;">
+    <div style="width:1100px;background-image:url('../images/body.jpg'); text-align: center; height: 404px;">
       <div style ="text-align:center; ">
           <h2 >会员注册</h2>
           <hr width="85%" align="right" style="color:#5C3B1A;" />
