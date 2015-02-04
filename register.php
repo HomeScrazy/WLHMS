@@ -102,7 +102,7 @@
         </div>
         <br/><br/><br/>
         <input type="submit" class="btn btn-success" style="margin-left:-500px;" name="submit" value="Register"/>
-        <?php echo $repeatErr;?>
+        <?php echo $success;?>
       </form>
     </div>
   </body>

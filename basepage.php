@@ -44,7 +44,7 @@
       session_start();
       if(!isset($_SESSION['userid'])){
         $htmlBodyStr.="<div id=\"need_login\">
-        <a href=\"\">登录</a> /
+        <a href=\"login.php\">登录</a> /
         <a href=\"register.php\">注册</a>
         </div>";
       }
