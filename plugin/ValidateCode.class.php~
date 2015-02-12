@@ -50,7 +50,7 @@ class ValidateCode {
  }
  //输出
  private function outPut() {
-  header('Content-type:image/png');
+  header('Content-type:image/jpg');
   imagepng($this->img);
   imagedestroy($this->img);
  }
