@@ -56,13 +56,15 @@
         die('Could not connect:'.mysql_error());
       }
       $insert="";
-      $insert.="insert into member values";
+      $insert.="insert into members values";
       $insert.="('".$id."','".$nickname."','".$email."','".$pwd."')";
       mysql_select_db("wlsale",$con);
-      mysql_select_db("wlsale",$con);
+      if(mysql_query($insert,$con)){
+        $success="<script>alert(\"注册成功\")</script>";
+      }else{
+        $success="<script>alert(\"注册\")</script>";
+      }
       mysql_close($con);
-      $success="<script>alert(\"注册成功\")</script>";
-
     }
   }
 ?>
