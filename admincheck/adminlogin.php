@@ -1,9 +1,11 @@
 <!DOCTYPE>
 <html>
+<!-- this page is for admin login.-->
+
 <head>
   <title>后台-管理员登录</title>
-  <script src="..\dist\js\bootstrap.js"></script>
-  <link rel="stylesheet" type="text/css" href="..\dist\css\bootstrap.css">
+  <script src="../dist/js/bootstrap.js"></script>
+  <link rel="stylesheet" type="text/css" href="../dist/css/bootstrap.css">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <style type="text/css">
     .warning{
@@ -41,12 +43,12 @@
     }
     if($errNum<=0){
       //对密码进行加密处理
-     
+
       $con=mysql_connect("localhost","root","root");
       if(!$con){
         die('Could not connect:'.mysql_error());
       }
-      $query="select * from admin where aid='".$account."'and apwd='".$password."'";
+      $query="select * from admin where aid='".$account."'and apassword='".$password."'";
       mysql_select_db("wlsale",$con);
       $result=mysql_query($query);
       if(mysql_num_rows($result)){

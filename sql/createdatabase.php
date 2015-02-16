@@ -1,7 +1,7 @@
 <?php
  	/*
 		this file is to create the database wlsale.
-		we need to create a database called "wlsale" and create the table 
+		we need to create a database called "wlsale" and create the table
 		we need.
         tablelist:
         member(store the base information of member)
@@ -10,7 +10,12 @@
         mnickname  varchar(50)     yes        nickname of member
         memail     varchar(100)     no        emali for login
         password   varchar(100)     no        password for login
-     
+
+        admin(store the information of admin)
+        field         type         isnull        explain
+        aid        varchar(100)      no          admin's id
+        apassword  varchar(50)       yes         password for admin login
+
     */
   echo "Create the DataBase 'wlSale',please wait!<br/>";
   $mysql_sever_name="localhost";
