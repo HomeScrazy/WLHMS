@@ -40,12 +40,13 @@
       }else{
           $success="<script>alert(\"Add Success\")</script>";
       }
+      mysql_close($con);
     }
   }
 ?>
   <div style="margin-left:400px;">
     <h1>Add Category</h1>
-  </div>
+  </div><
   <hr/>
   <form class="form-horizontal" style="margin-left:200px;" role="form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"])?>">
     <div class="form-group">
@@ -65,5 +66,4 @@
     <?php echo $success?>
   </form>
 </body>
-
 </html>
