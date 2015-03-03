@@ -1,7 +1,7 @@
 <!DOCTYPE>
 <html>
 <head>
-  <title>category manager</title>
+  <title>ChildrenCategory Manager</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <script src="../dist/js/bootstrap.js"></script>
   <link rel="stylesheet" type="text/css" href="../dist/css/bootstrap.css">
@@ -17,7 +17,7 @@
   $nameErr="";
 ?>
 <div style="margin-left:400px;">
-  <h1>Add children category</h1>
+  <h1>Add Children Category</h1>
 </div>
 <form class="form-horizontal" style="margin-left:200px;" role="form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"])?>">
   <div class="form-group">
